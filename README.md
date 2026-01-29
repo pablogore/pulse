@@ -35,8 +35,11 @@ Instead of writing Go code like:
 ```go
 resp, _ := http.Post(...)
 if resp.StatusCode != 200 { ... }
+```
 
 You write tests like this:
+
+```go
 POST /api/orders
 Authorization: Bearer {{token}}
 Content-Type: application/json
